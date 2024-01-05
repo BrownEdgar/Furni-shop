@@ -1,0 +1,35 @@
+.Navbar{
+
+    padding: 1em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 150px;
+    li{
+        list-style: none;
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 64px;
+         a{
+            text-decoration: none;
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-left: 70px;
+         }
+    }
+    h1{
+        display: flex;
+        padding: 50px;
+        color: #FFF;
+        font-family: Saira;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 15px;
+        margin-right: 430px;
+    }
+}
