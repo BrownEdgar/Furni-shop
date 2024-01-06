@@ -1,10 +1,10 @@
-import React from 'react'
 import './App.scss'
+import { Testimonial } from './components'
 
 export default function App() {
   return (
     <div>
-      <h1>Furni shop</h1>
+      <Testimonial/>
     </div>
   )
 }

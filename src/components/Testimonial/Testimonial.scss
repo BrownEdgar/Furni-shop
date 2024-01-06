@@ -1,0 +1,144 @@
+.Testimonial {
+  font-family: Saira;
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 0;
+
+  &-leftSide {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    overflow: hidden;
+
+    &>h1 {
+      color: #23262F;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%;
+      text-transform: capitalize;
+    }
+
+    &__slider {
+      --slider-width: 100%;
+      --slider-offset: 1;
+      --slider-count: 0;
+
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      width: var(--slider-width);
+
+      // slider animation
+      transition: transform 1s linear;
+      transform: translateX(calc((100% / var(--slider-count)) - ((100% / var(--slider-count)) * var(--slider-offset))));
+
+      &__track {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        width: 50%;
+
+        &_userBox {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          &_userInfo {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            &>h2 {
+              color: #23262F;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 100%;
+            }
+
+            &>p {
+              color: #23262F;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 100%;
+              opacity: .5;
+            }
+          }
+
+          &_imgBox {
+            width: 80px;
+            height: 80px;
+
+            &>img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+              border-radius: 50%;
+            }
+          }
+        }
+
+        &_desc {
+          max-width: 570px;
+          color: #23262F;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 170%;
+        }
+      }
+    }
+
+    &_arrowButtons {
+      width: 124px;
+      display: flex;
+      justify-content: space-between;
+
+      &_btnPrev,
+      &_btnNext {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+
+        &>svg {
+          display: block;
+          margin: auto;
+        }
+
+        &.active {
+          background-color: #286F6C;
+        }
+
+        &.active path {
+          stroke: white;
+        }
+
+        &.active:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &-rightSide {
+    background-color: white;
+
+    &>img {
+      display: block;
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+  }
+}
