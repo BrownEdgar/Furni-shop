@@ -1,0 +1,31 @@
+.FooterMiddle {
+	display: flex;
+	justify-content: space-between;
+	height: 185px;
+
+	&-section {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+	}
+
+	&-sectionTitle {
+		font-family: 'Raleway', sans-serif;
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	&-list {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex-grow: 1;
+	}
+
+	&-listElement {
+		font-family: 'Inter', sans-serif;
+		font-weight: 400;
+		font-size: 14px;
+	}
+}
