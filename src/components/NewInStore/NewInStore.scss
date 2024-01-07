@@ -1,0 +1,94 @@
+.slider-container {
+  margin-top: 70px;
+  width: 1440px;
+  height: 540px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+
+  & .header-container {
+    margin: 30px 70px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    & h2 {
+      color: #23262F;
+      font-family: Saira;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%;
+      text-transform: capitalize;
+      margin-bottom: 89px;
+    }
+
+    & p {
+      color: #23262F;
+      font-family: Saira;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 170%;
+      letter-spacing: 0.16px;
+      margin-bottom: 48px;
+    }
+
+    & .check-all {
+      color: #23262F;
+      font-family: Saira;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 160%;
+      letter-spacing: 0.16px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      & span {
+        margin-right: 10px;
+      }
+
+      &:hover {
+        text-decoration-line: underline;
+      }
+    }
+  }
+
+  & .slider {
+    width: 1120px;
+
+    & .slick-slide {
+      width: 265px;
+      height: 400px;
+      margin: 0 20px;
+      position: relative;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.25) 100%), lightgray 50% / cover no-repeat;
+      }
+
+      & .slide-text {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100%;
+        color: #FFF;
+        font-family: Saira;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160%;
+        letter-spacing: 0.28px;
+      }
+    }
+  }
+}
