@@ -1,7 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
+import { footerTopReducer, footerMiddleReducer, footerBottomReducer } from '../features';
 
 const store = configureStore({
-  reducer: {}
-})
+	reducer: {
+		footerTop: footerTopReducer,
+		footerMiddle: footerMiddleReducer,
+		footerBottom: footerBottomReducer,
+	},
+});
 
-export default store
+export default store;
