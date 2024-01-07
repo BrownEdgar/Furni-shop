@@ -1,10 +1,11 @@
-import React from 'react'
-import './App.scss'
+import React from 'react';
+import './App.scss';
+import { CreateSection } from './components';
 
 export default function App() {
-  return (
-    <div>
-      <h1>Furni shop</h1>
-    </div>
-  )
+	return (
+		<div>
+			<CreateSection />
+		</div>
+	);
 }
