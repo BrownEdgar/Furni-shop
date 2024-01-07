@@ -1,0 +1,60 @@
+.main{
+    background-image: url('./assets/Rectangle\ 928.svg');
+    background-position: center;
+    background-color: aqua;
+    width: 1440px;
+    height: 490px;
+    position: relative;
+}
+.text{
+    width:558px;
+    height: 248px;
+    border-radius: 8px;
+    position: absolute;
+    top:100px;
+    left:760px;
+    display: flex;
+    flex-direction: column;
+}
+.textbox{
+    width: 349px;
+    height: 148px;
+}
+.form{
+    width: 558px;
+    height: 60px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    & input{
+        width: 384px;
+        height: 60px;
+        border-radius: 8px;
+        padding-left: 20px;
+        border: none;
+    }
+    & button{
+        background-color: black;
+        color: #FFFFFF;
+        width: 152px;
+        height: 60px;
+        border-radius: 8px;
+    }
+}
+.getdiscount{
+    width: 349px;
+    height: 108px;
+    color: #FFFFFF;
+    line-height: 54px;
+    font-family: 'Saira', sans-serif;
+}
+.join{
+    color: #FFFFFF;
+    width: 176px;
+    height: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+     font-family: 'Saira', sans-serif;
+  
+}
