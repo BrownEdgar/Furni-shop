@@ -1,0 +1,40 @@
+.Product {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  padding: 70px 0;
+
+  &-header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h1,
+    p {
+      color: #23262F;
+      font-family: Saira;
+      font-style: normal;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 55px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 165%;
+      max-width: 540px;
+    }
+  }
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
