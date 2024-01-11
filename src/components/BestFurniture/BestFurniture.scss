@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;600&display=swap');
+
+.BestFurniture {
+	height: 591px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'Saira', sans-serif;
+	color: #23262f;
+
+	&-textWrapper {
+		width: 500px;
+	}
+
+	&-title {
+		font-size: 36px;
+		font-weight: 600;
+		text-transform: capitalize;
+		line-height: 52px;
+		margin-bottom: 35px;
+	}
+
+	&-body {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 34px;
+	}
+
+	&-imageWrapper {
+		width: 514px;
+		max-height: 399px;
+
+		& > img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			display: block;
+			border-radius: 5px;
+		}
+	}
+
+	& > .container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 120px;
+	}
+}
