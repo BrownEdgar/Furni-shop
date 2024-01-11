@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
+import { bestFurnitureReducer } from '../features';
 import productReducer from '../features/product/productSlice';
 
 const store = configureStore({
-  reducer: {
-    product: productReducer
-  }
-})
+	reducer: {
+		bestFurniture: bestFurnitureReducer,
+    product: productReducer,
+	},
+});
 
-export default store
+export default store;
